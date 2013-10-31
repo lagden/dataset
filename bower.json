@@ -1,0 +1,23 @@
+{
+  "name": "dataset",
+  "description": "It is a plugin that allows access, both in reading and writing mode, to all the custom data attributes (data-*) set on the element",
+  "version": "1.0.0",
+  "author": "Thiago Lagden",
+  "main": [
+    "dataset.js"
+  ],
+  "keyword": [
+    "dom",
+    "dataset",
+    "api",
+    "polyfill"
+  ],
+  "ignore": [
+    "example",
+    "README.md",
+    "LICENSE",
+    "bower.json",
+    ".gitignore",
+    ".bowerrc"
+  ]
+}
