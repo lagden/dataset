@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Example - Dataset</title>
+</head>
+<body>
+
+    <h1>Example - Dataset</h1>
+
+    <div id="awesome" data-awesome-stuff="nice"></div>
+    <div id="fucckkk"></div>
+
+    <script type="text/javascript" src="//raw.github.com/lagden/dataset/master/dataset.js"></script>
+    <script type="text/javascript">
+        // See reference: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.dataset
+        new Dataset(document, navigator, true);
+
+        var el = document.getElementById('awesome');
+        el.dataset.newStuff = "new stuff";
+
+        var fuck = document.getElementById('fucckkk');
+        fuck.dataset.yeah = "yeahhh";
+
+        var cc = 0;
+        var i = setInterval(function(){
+            el.insertAdjacentHTML('afterend', '<p><b>' + el.dataset.awesomeStuff + '</b> | <b>' + el.dataset.newStuff + '</b> | <b>' + fuck.dataset.yeah + '</b></p>');
+            cc++;
+            if(cc === 10)
+                clearInterval(i);
+        }, 1000);
+    </script>
+</body>
+</html>
