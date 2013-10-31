@@ -19,11 +19,11 @@ The component can be used as an AMD module, or a global.
 ## Contributors
 
     project  : dataset
-    repo age : 31 minutes
+    repo age : 15 minutes
     active   : 1 days
-    commits  : 6
-    files    : 7
+    commits  : 1
+    files    : 6
     authors  :
-        6  Thiago Lagden           100.0%
+        1  Thiago Lagden           100.0%
 
 :)
