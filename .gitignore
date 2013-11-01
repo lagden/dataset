@@ -17,3 +17,5 @@ _darcs
 .monotone
 .svn
 .project
+
+# http://docs.closure-library.googlecode.com/git/closure_goog_dom_dataset.js.source.html

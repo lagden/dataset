@@ -1,0 +1,23 @@
+{
+    "name": "dataset",
+    "description": "It is a plugin that allows access, both in reading and writing mode, to all the custom data attributes (data-*) set on the element",
+    "version": "1.1.0",
+    "main": "dataset.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/lagden/dataset.git"
+    },
+    "keywords": [
+        "dom",
+        "dataset",
+        "api",
+        "polyfill"
+    ],
+    "author": {
+        "name": "Thiago Lagden",
+        "email": "lagden@gmail.com",
+        "url": "http://lagden.in"
+    },
+    "license": "MIT",
+    "readmeFilename": "README.md"
+}

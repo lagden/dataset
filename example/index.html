@@ -14,7 +14,8 @@
     <script type="text/javascript" src="../dataset.js"></script>
     <script type="text/javascript">
         // See reference: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.dataset
-        new Dataset(document, navigator, true);
+        var ds = new Dataset(document, true);
+        ds.run();
 
         var el = document.getElementById('awesome');
         el.dataset.newStuff = "new stuff";
