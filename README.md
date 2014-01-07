@@ -8,22 +8,28 @@ It is a plugin that allows access, both in reading and writing mode, to all the 
 
 ## Installation
 
-Install with [Bower](http://bower.io):
+Install with [Bower](http://bower.io/):
 
 ```
 bower install --save dataset
+```
+
+Install with [Volo](http://volojs.org/):
+
+```
+volo add -f lagden/dataset/~1
 ```
 
 The component can be used as an AMD module, or a global.
 
 ## Contributors
 
-    project  : dataset
-    repo age : 15 minutes
-    active   : 1 days
-    commits  : 1
-    files    : 6
-    authors  :
-        1  Thiago Lagden           100.0%
+     project  : dataset
+     repo age : 10 weeks
+     active   : 3 days
+     commits  : 7
+     files    : 10
+     authors  :
+         7  Thiago Lagden           100.0%
 
 :)
