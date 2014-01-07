@@ -1,7 +1,7 @@
 {
     "name": "dataset",
     "description": "It is a plugin that allows access, both in reading and writing mode, to all the custom data attributes (data-*) set on the element",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "main": "dataset.js",
     "repository": {
         "type": "git",
@@ -19,5 +19,8 @@
         "url": "http://lagden.in"
     },
     "license": "MIT",
-    "readmeFilename": "README.md"
+    "readmeFilename": "README.md",
+    "volo": {
+        "url": "https://raw.github.com/lagden/dataset/{version}/dataset.js"
+    }
 }

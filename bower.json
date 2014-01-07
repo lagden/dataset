@@ -1,7 +1,7 @@
 {
     "name": "dataset",
     "description": "It is a plugin that allows access, both in reading and writing mode, to all the custom data attributes (data-*) set on the element",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "author": {
         "name": "Thiago Lagden",
         "email": "lagden@gmail.com",
@@ -19,10 +19,13 @@
     ],
     "ignore": [
         "example",
-        "README.md",
-        "LICENSE",
-        "bower.json",
+        "spec",
+        "test",
         ".gitignore",
-        ".bowerrc"
+        "bower.json",
+        "History.md",
+        "LICENSE",
+        "package.json",
+        "README.md"
     ]
 }

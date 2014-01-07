@@ -1,6 +1,6 @@
 /**
  * dataset.js
- * Version 1.0.1
+ * Version 1.2.0
  * Thiago Lagden | @thiagolagden | lagden@gmail.com
  * It is a plugin that allows access, both in reading and writing mode, to all the custom data attributes (data-*) set on the element
  * 
@@ -11,16 +11,21 @@
 ;(function(window) {
 
     function Dataset(doc, isDebug) {
-        this.doc = doc;
+        this.doc = doc || false;
         this.isDebug = isDebug || false;
+        if(this.doc)
+            this.run();
+        else
+            console.warn('missing document');
     }
 
     Dataset.prototype.run = function() {
-        var test = this.doTest();
+        var test = doTest(this.doc);
 
         if (this.isDebug)
             console.log("[doTest]", test);
 
+        // If the test fails, create the dataset
         if (test === false) {
             var all = this.doc.getElementsByTagName("*");
             for (var i = all.length - 1; i >= 0; i--) {
@@ -44,14 +49,6 @@
         return null;
     };
 
-    // Test support
-    // https://github.com/phiggins42/has.js/blob/master/detect/dom.js#L17
-    Dataset.prototype.doTest = function() {
-        var el = this.doc.createElement("div");
-        el.setAttribute("data-a-b", "c");
-        return isHostType(el, "dataset") && el.dataset.aB == "c";
-    };
-
     // Return a data attribute in camelcase
     Dataset.prototype.dataCamelCase = function(name) {
         var r = "";
@@ -68,6 +65,14 @@
         }
         return r;
     };
+
+    // Test support
+    // https://github.com/phiggins42/has.js/blob/master/detect/dom.js#L17
+    function doTest(doc) {
+        var el = doc.createElement("div");
+        el.setAttribute("data-a-b", "c");
+        return isHostType(el, "dataset") && el.dataset.aB == "c";
+    }
 
     // Types of object, function, or unknown.
     // https://github.com/phiggins42/has.js/blob/master/has.js#L101
