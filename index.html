@@ -14,7 +14,7 @@
     <script type="text/javascript" src="//rawgithub.com/lagden/dataset/master/dataset.js"></script>
     <script type="text/javascript">
         // See reference: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.dataset
-        new Dataset(document, navigator, true);
+        var ds = new Dataset(document, true);
 
         var el = document.getElementById('awesome');
         el.dataset.newStuff = "new stuff";
