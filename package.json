@@ -1,7 +1,7 @@
 {
     "name": "dataset",
     "description": "It is a plugin that allows access, both in reading and writing mode, to all the custom data attributes (data-*) set on the element",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "main": "dataset.js",
     "repository": {
         "type": "git",

@@ -1,6 +1,6 @@
 /**
  * dataset.js
- * Version 1.2.0
+ * Version 1.2.1
  * Thiago Lagden | @thiagolagden | lagden@gmail.com
  * It is a plugin that allows access, both in reading and writing mode, to all the custom data attributes (data-*) set on the element
  * 
@@ -11,6 +11,9 @@
 ;(function(window) {
 
     function Dataset(doc, isDebug) {
+        if(false === (this instanceof Dataset)) {
+            return new Dataset(doc, isDebug);
+        }
         this.doc = doc || false;
         this.isDebug = isDebug || false;
         if(this.doc)
@@ -23,7 +26,7 @@
         var test = doTest(this.doc);
 
         if (this.isDebug)
-            console.log("[doTest]", test);
+            console.log("[has dataset API]", test);
 
         // If the test fails, create the dataset
         if (test === false) {
