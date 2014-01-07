@@ -24,8 +24,4 @@ describe("Dataset", function() {
     it("Dataset.dataCamelCase(name)", function() {
         assert.equals("fuckYeahh", this.ds.dataCamelCase("data-fuck-yeahh"));
     });
-
-    it("Dataset.doTest()", function() {
-        expect(this.ds.doTest()).toBeBoolean();
-    });
 });
